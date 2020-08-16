@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>¨¡HOLA ;)</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+	<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<script type="text/javascript">
+	function sisas(){
+		document.getElementById('main').style.display="none";
+		document.getElementById('mostrar').style.display="block";
+	}
+	function propuesta(){
+		var width= window.innerWidth;
+		var heigth= window.innerHeight;
+
+		nw=(Math.random()*width);
+		nh=(Math.random()*heigth);
+
+		document.getElementById('btnno').style.position="absolute";
+		document.getElementById('btnno').style.left= nw +"px";
+		document.getElementById('btnno').style.top= nh +"px";
+	}
+</script>
+<body>
+	<div id="main" class ="main .col-xs-10 .col-sm-8 .col-md-6 .col-lg-6" >
+		<h1>Hi Baby ¿quisieras salir? ;)</h1>
+	<div>
+		<input class="boton" type="button" id="btnsi" value="SI" onclick="sisas()" >
+		<input class="boton" type="button" id="btnno" value="NO" onmouseover="propuesta()">
+	</div>
+
+	</div>
+	<div  id="mostrar" class="si .col-xs-10 .col-sm-8 .col-md-6 .col-lg-6" >
+
+		<h1>Genial, nos vemos el viernes</h1>
+	</div>
+</body>
+</html>

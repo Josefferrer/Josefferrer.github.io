@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.boton{
+	width: 100px;
+	height: 70px;
+	font-family: 'Pangolin', cursive;
+	font-size: 40px;
+	border-radius: 10px;
+	color: black;
+	background:rgba(255,255,255,.6);
+	border-style: solid black;
+}
+body{
+	background-image: url("descarga.jfif");
+
+}
+.main{
+	color: white;
+	font-family: 'Pangolin', cursive;
+	margin-top: 20%;
+	-webkit-text-stroke: 2px black;
+	text-align: center;
+}
+.main h1{
+	font-size: 50px;
+}
+.si{
+	display: none;
+	color: white;
+	font-family: 'Pangolin', bold;
+	margin-top: 20%;
+	-webkit-text-stroke: 2px black;
+
+
+	/* IMPORTANTE */
+	text-align: center;
+}
+.si h1{
+	font-size: 50px;
+}
